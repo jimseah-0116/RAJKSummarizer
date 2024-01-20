@@ -3,8 +3,11 @@ A telegram bot that **summarizes messages** from the user's selected telegram **
 
 ## Project Description
 
-**Motivation** - Sometimes 
-![TelegramBot](https://cdn.discordapp.com/attachments/523125126540165121/1198278225479073912/image.png?ex=65be528f&is=65abdd8f&hm=c0e3f6fa4a0ea930e525a6d9ac93edf385b4957cd718f2aebc57899296b4d6b6&=10x10)
+**Motivation** - Do you often find yourself too lazy to read up on the latest updates in your Telegram groups or channels? 
+
+<p align="center">
+  <img width="420" height="300" src="https://cdn.discordapp.com/attachments/523125126540165121/1198278260988059679/image.png?ex=65be5298&is=65abdd98&hm=a97b8eda69e6c3c3459f60819288f627bd174567abae969ee1ae5841388d955e&">
+</p>
 
 ## How to use
 
