@@ -26,23 +26,23 @@ client = TelegramClient(username, api_id, api_hash)
 
 
 # Telegram bot
-TOKEN: Final = '6738604120:AAH5F4XeRj8tG2zyoQZHnbp_ZmqmupCXkS8'
-BOT_USERNAME: Final = '@TLGRM_GPTbot'
+TOKEN: Final = '6762049149:AAHDUimc4DzncLJii41QTDfJHy2PPL6B7wc'
+BOT_USERNAME: Final = '@RAJKSummarizer_bot'
 ENTER_PHONE, ENTER_CODE, ENTER_CHANNEL = range(3)
 telethon_state = {'phone': None, 'code': None, 'channel': None}
 # commands
 
 
 async def start_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    await update.message.reply_text("Welcome to TELGRM_GPT!\n"
+    await update.message.reply_text("Hi, I'm RAJKSummarizer Bot!\n"
                                     "I can summarize chats from your channels!\n"
-                                    "Please enter your phone number registered with telegram to start"
+                                    "Please enter your phone number registered with telegram to start, "
                                     "e.g. +6512345678")
     return ENTER_PHONE
 
 
 async def help_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    await update.message.reply_text("I can summarize your conversations from channels!")
+    await update.message.reply_text("I can summarize your conversations from channels! Use /start to begin.")
 
 
 async def custom_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
@@ -52,16 +52,9 @@ async def custom_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
 # handle responses
 
 
-def handle_response(text: str) -> str:
-    processed: str = text.lower()
-
-    if 'hello' in processed:
-        return 'Hey!'
-
-    if 'ur mother' in processed:
-        return 'no ur mother'
-
-    return 'what?'
+def handle_response() -> str:
+    #processed: str = text.lower()
+    return 'Please use /start to begin!'
 
 
 async def enter_phone_handler(update: Update, context: ContextTypes.DEFAULT_TYPE):
@@ -74,7 +67,7 @@ async def enter_phone_handler(update: Update, context: ContextTypes.DEFAULT_TYPE
             await update.message.reply_text("Please enter the code sent to you")
             return ENTER_CODE
         else:
-            await update.message.reply_text("Please enter a channel")
+            await update.message.reply_text("Please enter group or channel id")
             return ENTER_CHANNEL
     except Exception as e:
         await update.message.reply_text(f"{e}")
