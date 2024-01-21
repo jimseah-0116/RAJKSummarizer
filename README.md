@@ -3,8 +3,8 @@ A telegram bot that **summarizes messages** from the user's selected telegram **
 
 ## Project Motivation
 
-Have you experienced a situation where you have channels with **days' worth of unread messages**, and you're **too lazy to read** through these messages but **still want to know** the gist of what's happening?
-We definitely have, often enough that we wanted to have a quick, easy way to summarize the information in these chats.
+Have you experienced a situation where you have channels with **days' worth of unread messages**, and you're **too lazy to read** through these messages but **still want to know** the gist of what's happening? We definitely have, often enough that we wanted to have a quick, easy way to summarize the information in these chats in just 1 message, so that we won't have to constantly scroll up the channel chat for information.
+
 Introducing RAJKSummarizer Bot:
 <p align="center">
   <img width="460" height="300" src="https://cdn.discordapp.com/attachments/523125126540165121/1198454126485446767/image.png?ex=65bef661&is=65ac8161&hm=6a18db8f0ffac40126a76ddac35541d2aedb4440d4eae7fcd1c1980a6b1df349&">
