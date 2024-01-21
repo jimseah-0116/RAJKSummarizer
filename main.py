@@ -9,7 +9,9 @@ from telethon import TelegramClient
 from typing import Final
 from telegram import Update
 from telegram.ext import Application, CommandHandler, MessageHandler, ConversationHandler, filters, ContextTypes
+from dotenv import load_dotenv, dotenv_values
 
+load_dotenv()
 curr_dir = os.getcwd()
 config = configparser.ConfigParser()
 config.read(os.path.join(curr_dir, "telethon.config"))
@@ -26,7 +28,7 @@ client = TelegramClient(username, api_id, api_hash)
 
 
 # Telegram bot
-TOKEN: Final = '6762049149:AAHDUimc4DzncLJii41QTDfJHy2PPL6B7wc'
+TOKEN: Final = os.getenv("BOTTOKEN")
 BOT_USERNAME: Final = '@RAJKSummarizer_bot'
 ENTER_PHONE, ENTER_CODE, ENTER_CHANNEL = range(3)
 telethon_state = {'phone': None, 'code': None, 'channel': None}
