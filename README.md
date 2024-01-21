@@ -1,9 +1,9 @@
 # RAJKSummarizer
-A telegram bot that **summarizes messages** from the user's selected telegram **channels and groups**, using openAI's GPT API.
+A telegram bot that **summarizes messages** from the user's selected telegram **channels**, using openAI's GPT API.
 
 ## Project Motivation
 
-Have you experienced a situation where you have groups or channels with **days' worth of unread messages**, and you're **too lazy to read** through these messages but **still want to know** the gist of what's happening?
+Have you experienced a situation where you have channels with **days' worth of unread messages**, and you're **too lazy to read** through these messages but **still want to know** the gist of what's happening?
 We definitely have, often enough that we wanted to have a quick, easy way to summarize the information in these chats.
 Introducing RAJKSummarizer Bot:
 <p align="center">
@@ -23,5 +23,5 @@ Introducing RAJKSummarizer Bot:
   <img width="230" height="400" src="https://cdn.discordapp.com/attachments/523125126540165121/1198456301777338498/image.png?ex=65bef868&is=65ac8368&hm=df3f30829b11b33cf95c358344049ee942589e513a48cb01558c507c8fd47b8d&">
 </p>
 
- 5. The bot will instruct you to enter a group or channel id. Simply reply in the chat to do this.
+ 5. The bot will instruct you to enter a channel id. Simply reply in the chat to do this.
  6. Wait for a short moment, and the bot will generate a summary of the chat's messages in the past few days.
