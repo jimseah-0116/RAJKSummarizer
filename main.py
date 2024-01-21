@@ -9,7 +9,7 @@ from telethon import TelegramClient
 from typing import Final
 from telegram import Update
 from telegram.ext import Application, CommandHandler, MessageHandler, ConversationHandler, filters, ContextTypes
-from dotenv import load_dotenv, dotenv_values
+from dotenv import load_dotenv
 
 load_dotenv()
 curr_dir = os.getcwd()
