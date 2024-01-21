@@ -1,6 +1,6 @@
 from openai import OpenAI
 
-client = OpenAI(api_key="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")
+client = OpenAI(api_key="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")
 
 
 # GPT-3 API call
@@ -15,7 +15,7 @@ def get_completion(prompt, model="gpt-3.5-turbo"):
 # Use GPT API
 # change max_tokens
 
-def chatGPT(prompt, model="gpt-3.5-turbo", max_tokens=75, stop=None):
+def chatGPT(prompt, model="gpt-3.5-turbo", max_tokens=300, stop=None):
     response = client.chat.completions.create(
         model=model,
         messages = [{"role": "user", "content": prompt}],  # Provide the required 'messages' argument,
@@ -34,7 +34,7 @@ def TeleGPT(df):
     joined_text = " ".join(joined_text)
   
     # Extract relevant text
-    q = "Here are the text messages from a telegram channel, summarise the contents in less than 500 words.\n"
+    q = "Here are the text messages from a telegram channel, summarise the contents in less than 330 words.\n"
     prompt = q + "".join(joined_text)
     print("Prompt Created!")
     print("Computing...")

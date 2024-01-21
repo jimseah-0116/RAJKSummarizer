@@ -46,13 +46,7 @@ async def start_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
 async def help_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await update.message.reply_text("I can summarize your conversations from channels! Use /start to begin.")
 
-
-async def custom_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    await update.message.reply_text("This is a custom command")
-
-
-# handle responses
-
+# Handle responses
 
 def handle_response() -> str:
     #processed: str = text.lower()
@@ -69,7 +63,7 @@ async def enter_phone_handler(update: Update, context: ContextTypes.DEFAULT_TYPE
             await update.message.reply_text("Please enter the code sent to you")
             return ENTER_CODE
         else:
-            await update.message.reply_text("Please enter group or channel id")
+            await update.message.reply_text("Please enter channel id")
             return ENTER_CHANNEL
     except Exception as e:
         await update.message.reply_text(f"{e}")
